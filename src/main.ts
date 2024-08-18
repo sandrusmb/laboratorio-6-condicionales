@@ -119,6 +119,16 @@ function calculateScore(card: number): void {
   }
   score += cardValue;
   showScore();
+
+  setTimeout(() => {
+    if (score > 7.5) {
+      alert("Game over");
+      disableCardButton();
+    } else if (score === 7.5) {
+      alert("¡Lo has clavado! ¡Enhorabuena!");
+      disableCardButton();
+    }
+  }, 2000);
 }
 
 function showMessage() {
@@ -149,13 +159,16 @@ function enableCardButton() {
 
 function whatIsNext() {
   if (containerSecondary !== null) {
-    containerSecondary.innerHTML += `<button class="button next-button">¿Qué hubiera pasado?</button>`;
+    containerSecondary.innerHTML = `<button class="button next-button">¿Qué hubiera pasado?</button>`;
 
     const nextButton = document.querySelector(".next-button");
     if (nextButton !== null) {
       nextButton.addEventListener("click", () => {
         const card = giveMeCard();
         showCard(card);
+        calculateScore(card);
+        setTimeout(showMessage, 1000);
+        nextButton.setAttribute("disabled", "true");
       });
     }
   }
@@ -167,6 +180,10 @@ function reset() {
 
   if (container !== null) {
     container.innerHTML = "";
+  }
+
+  if (containerSecondary !== null) {
+    containerSecondary.innerHTML = "";
   }
 
   enableCardButton();

@@ -40,7 +40,7 @@ h1 {
   color: white;
 }
 
-.card-button[disabled] {
+.button[disabled] {
   opacity: 30%;
   background-color: #b3b5b5;
 }
