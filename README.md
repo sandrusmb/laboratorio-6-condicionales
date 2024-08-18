@@ -7,9 +7,12 @@
 - Ejecuta npm run dev
 - Abre el navegador en `http://localhost:5173/`
 
-**Ejercicio:**
+![Captura de pantalla 2024-08-18 a las 20 31 04](https://github.com/user-attachments/assets/34bd6abd-0904-4c1b-9eda-e27138c87363)
 
-1. Mostrar puntuación
+
+## Ejercicio:
+
+**1. Mostrar puntuación**
 
 Arranca por crear una variable que almacena la puntuación que lleve el usuario:
 
@@ -20,7 +23,7 @@ Arranca por crear una variable que almacena la puntuación que lleve el usuario:
 
     Más adelante invocaremos muestraPuntuación cada vez que el usuario pida carta nueva.
 
-2. Pedir carta
+**2. Pedir carta**
 
 Implementa la funcionalidad de pedir carta, ¿En qué consiste?
 
@@ -33,7 +36,7 @@ Pistas:
     Las cartas tienen los siguientes valores: 1,2,3,4,5,6,7,10,11,12
     Hasta ahora math.Random lo hemos usado para obtener números aleatores de un rango continuo (por ejemplo de 0 a 100), en este caso nos queremos saltar el 8 y el 9, SPOILER ALERT (piensa en una solución antes de leer la siguiente pista :))... ¿Cómo podemos hacerlo? Puedes plantear generar un número aleatorio entre 1 y 10, si el número es mayor que 7, le sumas 2 y ya tienes los valores que necesitabas.
 
-3. Mostrar carta
+**3. Mostrar carta**
 
    Crea una función que se llame muestraCarta que muestre la carta que le pasemos por parámetro, la firma podría ser tal que así:
 
@@ -49,11 +52,11 @@ Pistas
 
     Cuando el usuario pulse en el bóton Pide Carta llama a pideCarta y con el resultado llama a mostrarCarta.
 
-4. Game over
+**4. Game over**
 
 Si el usuario se pasa de 7,5 puntos, el juego termina y se muestra un mensaje de Game Over, además el usuario no puede seguir pidiendo cartas.
 
-5. Me planto
+**5. Me planto**
 
 Añadir un botón para que el usuario pueda plantarse, si el usuario se planta, el juego termina, el usuario no puede pedir más cartas y:
 
@@ -65,15 +68,15 @@ Añadir un botón para que el usuario pueda plantarse, si el usuario se planta, 
 
     Si la puntuación es 7.5, mostrar un mensaje que diga "¡ Lo has clavado! ¡Enhorabuena!"
 
-6. Nueva partida
+**6. Nueva partida**
 
 Una vez que el usuario ha terminado la partida (sea porque se ha plantado o porque ha perdido), se le muestra un botón para que pueda empezar una nueva partida.
 
-7. Estila la aplicación
+**7. Estila la aplicación**
 
 Utilizando CSS, estila la aplicación (margenes, espacios, colores, etc...) para que tenga el mejor aspecto posible.
 
-Apartado opcional
+**Apartado opcional**
 
 Saber lo que habría pasado
 
