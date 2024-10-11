@@ -1,5 +1,3 @@
-import "./style.css";
-
 let score: number = 0;
 const cardButton = document.querySelector(".card-button");
 const stopButton = document.querySelector(".stop-button");
@@ -259,6 +257,8 @@ if (
   resetButton.addEventListener("click", reset);
 }
 
-enableCardButton();
-showScore();
-showInitialCardBack();
+document.addEventListener("DOMContentLoaded", () => {
+  enableCardButton();
+  showScore();
+  showInitialCardBack();
+});
